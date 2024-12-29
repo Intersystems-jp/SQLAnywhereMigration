@@ -2,12 +2,12 @@
 
 - age-org.sql
 
-SQL Anywhereで動作していたオリジナル
+-- SQL Anywhereで動作していたオリジナル
 
 - age.sql
 
-IRISで動作するように修正したバージョン
+-- IRISで動作するように修正したバージョン
 
 - irisage.sql
 
-ObjectScriptで書き換えたバージョン  
+-- ObjectScriptで書き換えたバージョン  
