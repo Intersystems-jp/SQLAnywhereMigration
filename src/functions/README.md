@@ -12,7 +12,7 @@
 
   ObjectScriptで書き換えたバージョン
 
-- pythonage.sql
+- irispythonage.sql
 
   Embedded Pythonで書き換えたバージョン
 
@@ -24,5 +24,5 @@
 USER>set $namespace = "TEST"
 TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\age.sql","UTF8"),,"Sybase")
 TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\irisage.sql","UTF8"),,"IRIS")
-TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\pythonage.sql","UTF8"),,"IRIS")
+TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\irispythonage.sql","UTF8"),,"IRIS")
  ```
