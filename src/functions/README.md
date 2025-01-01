@@ -11,3 +11,13 @@
 - irisage.sql
 
   ObjectScriptで書き換えたバージョン  
+
+## 定義の取り込み方法
+
+ ```
+// 作業用ネームスペースTESTの場合
+// ファイルのエンコーディング UTF8
+USER>set $namespace = "TEST"
+TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\age.sql","UTF8"),,"Sybase")
+TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\irisage.sql","UTF8"),,"IRIS")
+ ```
