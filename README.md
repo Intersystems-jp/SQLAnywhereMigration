@@ -24,7 +24,7 @@ Function名をダブルクオートで囲みたい場合、管理ポータルで
 
  ```
 USER>set $namespace = "TEST"
-TEST>do $SYSTEM.SQL.DDLImport("sybase",,"c:\work\age.sql")
+TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\age.sql","UTF8"),,"Sybase")
  ```
 
 ### 関数のサポート
