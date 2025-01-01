@@ -13,10 +13,11 @@ declare @dt varchar
 -- 年齢の計算
 --
 --////////////////////////////////////////////////////////////////////
-set @dt = str(year(@rymd),4)+'-'+str(month(@bymd),2)+'-'+str(day(@bymd),2)
-set @dt = replace(@dt,' ','0')
-set @ymd = convert(DATETIME,@dt)
-if @rymd<@ymd then set @offset=1
+--set @dt = str(year(@rymd),4)+'-'+str(month(@bymd),2)+'-'+str(day(@bymd),2)
+--set @dt = replace(@dt,' ','0')
+--set @ymd = convert(DATETIME,@dt)
+--if @rymd<@ymd then set @offset=1
+if ((month(@rymd)*100)+day(@rymd))<((month(@bymd)*100)+day(@rymd)) then set @offset=1
 else set @offset=0
 set @age = datediff(YEAR,@bymd,@rymd) - @offset
 --////////////////////////////////////////////////////////////////////
