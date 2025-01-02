@@ -26,3 +26,17 @@ TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\age.sql","UTF8"),,"Sybase")
 TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\irisage.sql","UTF8"),,"IRIS")
 TEST>do $SYSTEM.SQL.Schema.ImportDDL($lb("c:\work\irispythonage.sql","UTF8"),,"IRIS")
  ```
+
+## Embedded Pythonの設定
+
+irispythonage.sqlを動作させるためには、Pythonのインストールと事前設定が必要
+
+設定例:
+
+管理ポータル>システム>構成>メモリー詳細設定
+
+```
+PythonPath    c:\intersystems\iris\bin
+PythonRuntimeLibrary  C:\Users\xxxxx\AppData\Local\Programs\Python\Python312\python3.dll
+PythonRuntimeLibraryVersion  3.12
+```
