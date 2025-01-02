@@ -40,3 +40,11 @@ PythonPath    c:\intersystems\iris\bin
 PythonRuntimeLibrary  C:\Users\xxxxx\AppData\Local\Programs\Python\Python312\python3.dll
 PythonRuntimeLibraryVersion  3.12
 ```
+
+### python-dateutilのインストール
+
+irispythonage.sqlを動作させるためには、python-dateutilのインストールが必要
+
+```
+python3 -m pip install --target c:\intersystems\iris\mgr\python python-dateutil
+```
