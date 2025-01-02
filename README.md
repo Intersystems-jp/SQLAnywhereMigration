@@ -66,3 +66,28 @@ IRISには計算の優先順位はなく、左から順番に実行されてい�
 ## サンプル
 
 src以下にfunctionのサンプルとテーブル定義、データのインサート、csvからのデータロードサンプルがある
+
+
+## SQLコマンドシェル
+
+管理ポータルのクエリ実行と同様の操作がターミナル上でも実行可能
+
+```
+USER>:sql
+SQL Command Line Shell
+----------------------------------------------------
+ 
+The command prefix is currently set to: <<nothing>>.
+Enter <command>, 'q' to quit, '?' for help.
+[SQL]USER>>q
+ 
+USER>:tsql
+SQL Command Line Shell
+----------------------------------------------------
+ 
+The command prefix is currently set to: <<nothing>>.
+Enter <command>, 'q' to quit, '?' for help.
+ 
+dialect = Sybase
+[SQL]USER>>
+```
