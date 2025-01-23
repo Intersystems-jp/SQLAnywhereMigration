@@ -101,3 +101,9 @@ Enter <command>, 'q' to quit, '?' for help.
 dialect = Sybase
 [SQL]USER>>
 ```
+
+## DDL非互換性
+
+テーブル定義で"EAUT"のように autoincrement を利用している場合はエラーになる。
+
+DDL 文を編集し、autoincrement を利用しているカラムを SERIAL 型にする必要がある。
