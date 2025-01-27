@@ -4,7 +4,6 @@ CREATE FUNCTION dba.f_irisage(IN bdate date, IN cdate date)
 RETURNS decimal(5,2)
 LANGUAGE OBJECTSCRIPT
 {
- set ^cdate = cdate
  set ymd1 = $zdate(bdate,8)
  set ymd2 = $zdate(cdate,8)
  set age = (ymd2-ymd1)\10000
