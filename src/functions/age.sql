@@ -21,6 +21,6 @@ set @age = datediff(YEAR,@bymd,@rymd) - @offset
 --////////////////////////////////////////////////////////////////////
 if day(@rymd) < day(@bymd) set @offset = 1
 else set @offset = 0
-set @age = @age+((datediff(MONTH,@bymd,@rymd)-@offset-(@age*12)/100))
+set @age = @age+((datediff(MONTH,@bymd,@rymd)-@offset-(@age*12))/100)
 return @age
 end
