@@ -11,7 +11,7 @@ declare @offset integer
 -- 年齢の計算
 --
 --////////////////////////////////////////////////////////////////////
-if ((month(@rymd)*100)+day(@rymd))<((month(@bymd)*100)+day(@bymd)) then set @offset=1
+if ((month(@rymd)*100)+day(@rymd))<((month(@bymd)*100)+day(@rymd)) then set @offset=1
 else set @offset=0
 set @age = datediff(YEAR,@bymd,@rymd) - @offset
 --////////////////////////////////////////////////////////////////////

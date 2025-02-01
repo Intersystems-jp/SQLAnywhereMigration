@@ -1,3 +1,5 @@
+drop function dba.f_pythonage
+go
 CREATE FUNCTION dba.f_pythonage(birthdate TIMESTAMP, currentdate TIMESTAMP)
 	RETURNS FLOAT
 	LANGUAGE PYTHON
