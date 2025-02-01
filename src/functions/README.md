@@ -18,6 +18,12 @@
 
   過去日付はサポートしていない（間違った結果を返す）
 
+- irisage2.sql
+
+  ObjectScriptで書き換えたバージョン
+
+  過去日付をサポート
+
 - irispythonage.sql
 
   Embedded Pythonで書き換えたバージョン
